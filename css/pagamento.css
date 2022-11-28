@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "cursiva";
+  src: url(../fontes/WhiteAngelica.ttf);
+}
+@font-face {
+  font-family: "glitten";
+  src: url(../fontes/GLITTEN\ ALL\ CAPS.ttf);
+}
+@font-face {
+  font-family: "vogue";
+  src: url(../fontes/Vogue.ttf);
+}
+@font-face {
+  font-family: "formas";
+  src: url(../fontes/Nymphette.ttf);
+}
+@font-face {
+  font-family: "logo";
+  src: url(../fontes/logo.ttf);
+}
+@font-face {
+  font-family: "um";
+  src: url(../fontes/Wedding.otf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  background-image: url(../img/capa111.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-container {
+  height: 650px;
+  width: 45%;
+  border-radius: 20px;
+  background-color: rgba(240, 255, 255, 0.349);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=pagamento.css.map */

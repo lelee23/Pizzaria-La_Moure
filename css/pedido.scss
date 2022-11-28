@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'cursiva';
+    src: url(../fontes/WhiteAngelica.ttf);
+}
+
+
+@font-face {
+    font-family: 'glitten';
+    src: url(../fontes/GLITTEN\ ALL\ CAPS.ttf);
+}
+
+@font-face {
+    font-family: 'vogue';
+    src: url(../fontes/Vogue.ttf);
+}
+
+@font-face {
+    font-family: 'formas';
+    src: url(../fontes/Nymphette.ttf);
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url(../fontes/logo.ttf);
+}
+
+@font-face {
+    font-family: 'um';
+    src: url(../fontes/Wedding.otf);
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+overflow: hidden;
+background-image: url(../img/capa111.png);  
+background-size: 120%;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.box-container{
+    height: 650px;
+    width: 45%;
+    border-radius: 20px;
+    background-color: rgba(240, 255, 255, 0.349);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .caixa2, .caixa1, .caixa3, .caixa4{
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+    input::placeholder{
+        font-size: 12px;
+    }
+
+
+
+    }
+
+    .caixa2 input{
+        width: 130px;
+    }
+
+
+    .caixa3 p{
+    text-align: center;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 75px;
+}
+
+.caixa1 label{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: rgb(36, 36, 36);
+}
+
+.caixa2{
+    margin-top: 15px;
+    h2{
+        margin-bottom: 10px;
+    }
+p{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: rgb(36, 36, 36);
+}
+
+input{
+    width: 120px;
+}
+}
+
+
+.caixa3{
+    input{
+        margin-top: 10px;
+        width: 100px;
+        margin-right: 35px;
+    }
+
+    label{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        color: rgb(36, 36, 36);
+    }
+
+    p{
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+}
+
+.caixa4{
+    textarea{
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+}
+
+    
+
+    h1{
+        font-family:'cursiva';
+        color: rgb(235, 235, 235);
+        font-weight: 100;
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 100;
+        color: rgb(231, 231, 231);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn{
+        margin-top: 15px;
+     
+     button{
+        height: 30px;
+        width: 150px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 10px;
+        border: #584c2b 1px solid;
+        background-color: transparent;
+        text-align: center;
+        font-size: 14px;
+        transition: 0.5s ease-in;
+     }button:hover{
+        font-size:12px;
+        background-color: #584e32;
+        border-radius: 0px;
+     }
+    }
+
+    input{
+        width: 100px;
+    }
+   
+}
