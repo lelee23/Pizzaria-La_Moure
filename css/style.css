@@ -64,11 +64,14 @@ body {
   width: 100%;
   height: 25%;
 }
+.header .sidebar nav {
+  width: 100%;
+}
 .header .sidebar .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
+  width: 100%;
 }
 .header .sidebar .menu a {
   text-decoration: none;
@@ -912,7 +915,7 @@ body {
     width: 100%;
   }
   .section2 .minibox-container .box img:hover {
-    width: 108%;
+    width: 100%;
     transition: 1s;
   }
   .section2 .minibox-container .box button {
@@ -1200,7 +1203,7 @@ body {
     height: 40%;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 800px) {
   .burger {
     position: fixed;
     top: 28px;
@@ -1229,7 +1232,7 @@ body {
   }
   .section3 .slider .navigation-bar {
     position: absolute;
-    top: 1015px;
+    top: 1050px;
     left: 50%;
   }
   .section3 #radio1:checked ~ .primeiro {
@@ -1273,7 +1276,7 @@ body {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
   .burger {
     position: fixed;
     top: 35px;
@@ -1283,6 +1286,19 @@ body {
   }
   .section1 {
     height: 441px;
+  }
+  .section1 .box h1 {
+    font-size: 55px;
+  }
+  .section1 .box span {
+    font-size: 45px;
+  }
+  .section1 .btn button {
+    width: 135px;
+    height: 42px;
+  }
+  .section1 .btn .span {
+    font-size: 15px;
   }
   .section2 {
     height: 500px;
@@ -1340,6 +1356,18 @@ body {
   .section4 h1 {
     font-size: 37px;
   }
+  .section4 .box-container .box .par h2 {
+    font-size: 16px;
+  }
+  .section4 .box-container .box .par p {
+    font-size: 13px;
+  }
+  .section4 .box-container .box .img {
+    height: 190px;
+  }
+  .section4 .box-container .box .img img {
+    height: 190px;
+  }
   .section5 {
     height: 2390px;
   }
@@ -1394,23 +1422,32 @@ body {
   .section2 {
     height: 510px;
   }
+  .section2 .title h1 {
+    font-size: 45px;
+  }
+  .section2 .minibox-container {
+    height: 440px;
+  }
   .section2 .minibox-container .box {
-    height: 375px;
+    height: 420px;
   }
   .section2 .minibox-container .box h3 {
-    margin-top: 105px;
+    margin-top: 130px;
     height: 30px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .section2 .minibox-container .box p {
     font-size: 14px;
   }
   .section2 .minibox-container .box button {
-    width: 100px;
+    width: 120px;
     height: 40px;
   }
   .section3 {
     height: 410px;
+  }
+  .section3 h1 {
+    font-size: 45px;
   }
   .section3 .slider {
     width: 439px;
@@ -1432,6 +1469,9 @@ body {
   .section4 {
     height: 500px;
   }
+  .section4 h1 {
+    font-size: 45px;
+  }
   .section4 .box-container {
     height: 410px;
   }
@@ -1447,27 +1487,29 @@ body {
   .section4 .box-container .box .par h2 {
     font-size: 17px;
   }
-  .section4 h1 {
-    font-size: 37px;
-  }
   .section5 {
-    height: 2700px;
+    height: 2895px;
+  }
+  .section5 h1 {
+    font-size: 45px;
   }
   .section5 .box-container {
-    height: 2555px;
-    width: 93%;
+    height: 2750px;
+    display: flex;
+    flex-direction: column;
   }
   .section5 .box-container .box {
-    height: 1256px;
+    height: 1350px;
+    width: 595px;
   }
   .section5 .box-container .box h1 {
     font-size: 29px;
   }
   .section5 .box-container .box p {
-    font-size: 17px;
+    font-size: 18px;
   }
   .section5 .box-container .box span {
-    font-size: 15px;
+    font-size: 17px;
   }
   .rodape .box1 h1, .rodape .box2 h1, .rodape .box3 h1 {
     height: 60px;
@@ -1492,5 +1534,166 @@ body {
   .rodape .box3 .mini i {
     font-size: 23px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .header .logo img {
+    width: 14%;
+  }
+  .section1 .box h1 {
+    font-size: 70px;
+  }
+  .section1 .box span {
+    font-size: 50px;
+    margin-left: 125px;
+  }
+  .section1 .btn button {
+    width: 155px;
+    height: 50px;
+  }
+  .section1 .btn button .span {
+    font-size: 17px;
+  }
+  .section2 {
+    height: 550px;
+  }
+  .section2 .minibox-container {
+    height: 500px;
+  }
+  .section2 .minibox-container .box {
+    height: 450px;
+  }
+  .section2 .minibox-container .box h3 {
+    margin-top: 160px;
+  }
+  .section3 {
+    height: 500px;
+  }
+  .section3 .slider {
+    width: 600px;
+    height: 330px;
+  }
+  .section3 .slider .slides {
+    height: 333px;
+  }
+  .section3 .slider .slides .navigation-bar {
+    position: absolute;
+    top: 1410px;
+  }
+  .section3 .slider .slides .navigation-bar .manual-btn {
+    padding: 17px;
+  }
+  .section4 .box-container .box {
+    height: 380px;
+  }
+  .section4 .box-container .box .img {
+    height: 200px;
+  }
+  .section4 .box-container .box .img img {
+    height: 200px;
+  }
+  .section4 .box-container .box .par h2 {
+    font-size: 22px;
+  }
+  .section4 .box-container .box .par p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1333px) {
+  .header .logo img {
+    width: 12%;
+  }
+  .header .sidebar nav {
+    width: 100%;
+  }
+  .section1 {
+    height: 445px;
+    background-size: 110%;
+  }
+  .section3 {
+    height: 700px;
+  }
+  .section3 .slider-frame {
+    height: 469px;
+    width: 757px;
+  }
+  .section3 .slider-frame .slide-images .img-container {
+    width: 1065px;
+  }
+  .section4 {
+    height: 740px;
+  }
+  .section4 .box-container {
+    width: 99%;
+    height: 610px;
+  }
+  .section4 .box-container .box {
+    width: 33%;
+    height: 600px;
+  }
+  .section4 .box-container .box .par h2 {
+    font-size: 25px;
+  }
+  .section4 .box-container .box .par p {
+    font-size: 15px;
+  }
+  .section4 .box-container .box .img {
+    width: 100%;
+  }
+  .section4 .box-container .box .img img {
+    width: 100%;
+  }
+  .section5 {
+    height: 3000px;
+  }
+  .section5 > h1 {
+    font-size: 50px;
+    width: 95%;
+    text-align: center;
+  }
+  .section5 .box-container {
+    height: 2840px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section5 .box-container .box {
+    height: 1365px;
+    width: 650px;
+  }
+  .section5 .box-container .box h1 {
+    font-size: 28px;
+  }
+  .section5 .box-container .box p {
+    font-size: 19px;
+  }
+  .section5 .box-container .box span {
+    font-size: 17px;
+  }
+  .section5 .box-container .box .last {
+    margin-bottom: 15px;
+  }
+  .section5 .box-container .box:not(:first-child) {
+    margin-top: 10px;
+  }
+  .section5 button {
+    margin: 5px 0px;
+    height: 40px;
+  }
+  .rodape {
+    height: 300px;
+  }
+  .rodape .box1 .mini {
+    margin-bottom: 135px;
+  }
+  .rodape .box3 .mini i {
+    margin-bottom: 165px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1333px) {
+  .header {
+    height: 190px;
+  }
+  .section1 {
+    height: 536px;
   }
 }/*# sourceMappingURL=style.css.map */
