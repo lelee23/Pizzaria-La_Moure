@@ -35,7 +35,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #000;
+  background-image: url(../img/fundao.png);
   background-size: 100%;
   font-family: "Poppins", serif;
   width: 100vw;
@@ -706,13 +706,15 @@ body {
   }
 }
 .rodape {
-  height: 350px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: black;
   color: #fff;
   flex-wrap: wrap;
+  width: 100vw;
+  overflow: hidden;
 }
 .rodape .box1,
 .rodape .box2,
