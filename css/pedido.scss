@@ -1,187 +1,97 @@
-*{
+// Definindo variáveis de cores
+$cor-fundo: #000;
+$cor-texto: #fff;
+$cor-bege: #85764D;
+$cor-botao: #68582b;
+$cor-botao-hover: #85764D;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
-@font-face {
-    font-family: 'cursiva';
-    src: url(../fontes/WhiteAngelica.ttf);
-}
-
-
-@font-face {
-    font-family: 'glitten';
-    src: url(../fontes/GLITTEN\ ALL\ CAPS.ttf);
-}
-
-@font-face {
-    font-family: 'vogue';
-    src: url(../fontes/Vogue.ttf);
-}
-
-@font-face {
-    font-family: 'formas';
-    src: url(../fontes/Nymphette.ttf);
-}
-
-@font-face {
-    font-family: 'logo';
-    src: url(../fontes/logo.ttf);
-}
-
-@font-face {
-    font-family: 'um';
-    src: url(../fontes/Wedding.otf);
-}
-
-
-
-
-html{
-    scroll-behavior: smooth;
-}
-body{
-overflow: hidden;
-background-image: url(../img/capa111.png);  
-background-size: 120%;
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-
-.box-container{
-    height: 650px;
-    width: 45%;
-    border-radius: 20px;
-    background-color: rgba(240, 255, 255, 0.349);
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $cor-fundo;
+    color: $cor-texto;
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
+}
 
-    .caixa2, .caixa1, .caixa3, .caixa4{
-        text-align: center;
-        width: 100%;
-        margin-top: 25px;
-    input::placeholder{
-        font-size: 12px;
-    }
-
-
-
-    }
-
-    .caixa2 input{
-        width: 130px;
-    }
-
-
-    .caixa3 p{
+.box-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 75%;
-    margin-top: 30px;
-    margin-left: 75px;
-}
-
-.caixa1 label{
-    margin-left: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    color: rgb(36, 36, 36);
-}
-
-.caixa2{
-    margin-top: 15px;
-    h2{
-        margin-bottom: 10px;
-    }
-p{
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-}
-label{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    color: rgb(36, 36, 36);
-}
-
-input{
-    width: 120px;
-}
-}
-
-
-.caixa3{
-    input{
-        margin-top: 10px;
-        width: 100px;
-        margin-right: 35px;
+    margin: 20px 0;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: $cor-bege;
     }
 
-    label{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 100;
-        color: rgb(36, 36, 36);
+    h2 {
+        font-size: 1.5rem;
+        margin: 20px 0 10px;
+        color: $cor-bege;
     }
 
-    p{
-        margin-top: 20px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 12px;
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
     }
-}
 
-.caixa4{
-    textarea{
-        margin-top: 20px;
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid $cor-bege;
         border-radius: 5px;
-    }
-}
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $cor-texto;
+        font-size: 1rem;
 
-    
-
-    h1{
-        font-family:'cursiva';
-        color: rgb(235, 235, 235);
-        font-weight: 100;
-        font-size: 36px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
     }
 
-    h2{
-        font-size: 24px;
-        font-weight: 100;
-        color: rgb(231, 231, 231);
-        font-family: 'Poppins', sans-serif;
+    textarea {
+        resize: none;
     }
 
-    .btn{
-        margin-top: 15px;
-     
-     button{
-        height: 30px;
-        width: 150px;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 10px;
-        border: #584c2b 1px solid;
-        background-color: transparent;
-        text-align: center;
-        font-size: 14px;
-        transition: 0.5s ease-in;
-     }button:hover{
-        font-size:12px;
-        background-color: #584e32;
-        border-radius: 0px;
-     }
+    p {
+        font-size: 0.9rem;
+        margin: 10px 0;
+        color: rgba(255, 255, 255, 0.8);
     }
 
-    input{
-        width: 100px;
+    .btn {
+        margin-top: 20px;
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: $cor-botao;
+            color: $cor-texto;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $cor-botao-hover;
+            }
+        }
     }
-   
 }

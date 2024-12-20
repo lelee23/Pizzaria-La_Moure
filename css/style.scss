@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'cursiva';
     src: url(../fontes/WhiteAngelica.ttf);
@@ -42,15 +44,16 @@ $cor-bege: #85764D;
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #000;
     background-image: url(../img/fundao.png);
-    // background-color: #000;
     background-size: 100%;
-font-family: "Poppins", serif;
-    width: 100vw;
+    font-family: "Poppins", serif;
+    width: 100%;
 }
 
 
@@ -64,7 +67,7 @@ font-family: "Poppins", serif;
     align-items: center;
     height: 90px;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     z-index: 999;
     // border: rgb(13, 0, 255) 1px solid;
 
@@ -225,7 +228,7 @@ font-family: "Poppins", serif;
 
     .header {
         height: 90px;
-        width: 100vw;
+        width: 100%;
         position: fixed;
         z-index: 4;
 
@@ -256,7 +259,7 @@ font-family: "Poppins", serif;
     background-image: url(../img/capa111.png);
     background-repeat: no-repeat;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -414,7 +417,7 @@ font-family: "Poppins", serif;
 
 .section2 {
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     // background-image: url(../img/fundo.jpg);
     background: none;
     background-size: 100%;
@@ -546,11 +549,14 @@ font-family: "Poppins", serif;
                 background-color: transparent;
                 border: 1px solid #fff;
                 border-radius: 50px;
-                color: #fff;
                 font-family: 'Poppins', sans-serif;
                 text-shadow: 0.2em 0.2em 0.2em black;
                 transition: 0.5s;
                 cursor: pointer;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
             }
 
             button:hover {
@@ -947,7 +953,7 @@ font-family: "Poppins", serif;
     background-color: black;
     color: #fff;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     .box1,
     .box2,
