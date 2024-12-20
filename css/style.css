@@ -340,6 +340,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 5px;
 }
 .section2 .minibox-container .box {
   display: flex;
